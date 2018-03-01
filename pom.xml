@@ -6,7 +6,29 @@
 
     <groupId>com.subin.framework</groupId>
     <artifactId>implements</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>mybatis</module>
+    </modules>
 
-    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.20</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>6.0.6</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+        </dependencies>
+    </dependencyManagement>
+
 </project>
