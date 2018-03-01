@@ -13,6 +13,7 @@
         <module>springIoC</module>
         <module>springAOP</module>
         <module>springMVC</module>
+        <module>design-mode</module>
     </modules>
 
     <dependencyManagement>
