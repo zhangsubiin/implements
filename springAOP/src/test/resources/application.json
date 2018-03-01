@@ -1,0 +1,26 @@
+[
+  {
+    "name":"beforeMethod",
+    "className":"com.subin.framework.aop.test.StartTimeBeforeMethod"
+  },
+  {
+    "name":"afterMethod",
+    "className":"com.subin.framework.aop.test.EndTimeAfterMethod"
+  },
+  {
+    "name":"testService",
+    "className":"com.subin.framework.aop.test.TestService"
+  },
+  {
+    "name":"testServiceProxy",
+    "className":"com.subin.framework.aop.core.ProxyFactoryBean",
+    "target":"testService",
+    "interceptorNames":[
+      "beforeMethod",
+      "afterMethod"
+    ]
+  }
+]
+
+
+

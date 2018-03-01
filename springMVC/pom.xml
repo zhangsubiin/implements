@@ -11,5 +11,17 @@
 
     <artifactId>springMVC</artifactId>
 
+    <dependencies>
+
+        <!-- J2EE 标准 -->
+        <!-- requied start -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- requied end -->
+
+    </dependencies>
 
 </project>

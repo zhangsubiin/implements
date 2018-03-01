@@ -1,0 +1,14 @@
+[
+  {
+    "name":"robot",
+    "className":"com.subin.framework.ioc.entity.Robot"
+  },
+  {
+    "name":"hand",
+    "className":"com.subin.framework.ioc.entity.Hand"
+  },
+  {
+    "name":"mouth",
+    "className":"com.subin.framework.ioc.entity.Mouth"
+  }
+]

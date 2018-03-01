@@ -11,5 +11,10 @@
 
     <artifactId>design-mode</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -11,5 +11,34 @@
 
     <artifactId>springAOP</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.subin.framework</groupId>
+            <artifactId>springIoC</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+
+    </dependencies>
 </project>

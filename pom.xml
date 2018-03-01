@@ -16,6 +16,11 @@
         <module>design-mode</module>
     </modules>
 
+    <properties>
+        <!-- dependency versions -->
+        <servlet.api.version>2.4</servlet.api.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -83,6 +88,16 @@
                 <version>2.3.2-b02</version>
                 <scope>provided</scope>
             </dependency>
+
+            <!-- J2EE 标准 -->
+            <!-- requied start -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- requied end -->
 
         </dependencies>
     </dependencyManagement>
