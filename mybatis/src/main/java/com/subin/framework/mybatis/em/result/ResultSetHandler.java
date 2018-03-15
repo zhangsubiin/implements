@@ -2,6 +2,7 @@ package com.subin.framework.mybatis.em.result;
 
 import com.subin.framework.mybatis.em.config.EmConfiguration;
 import com.subin.framework.mybatis.em.config.EmMapperRegistory;
+import org.apache.ibatis.reflection.factory.DefaultObjectFactory;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

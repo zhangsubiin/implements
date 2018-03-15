@@ -26,7 +26,7 @@ public class SimpleExecutor implements Executor {
     }
 
     @Override
-    public <T> T query(EmMapperRegistory.MapperData mapperData, Object parameter) throws Exception {
+    public <E> E query(EmMapperRegistory.MapperData mapperData, Object parameter) throws Exception {
         //初始化StatementHandler --> ParameterHandler --> ResultSetHandler
         StatementHandler handler = new StatementHandler(configuration);
         return (E) handler.query(mapperData, parameter);

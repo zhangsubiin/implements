@@ -22,7 +22,7 @@ public class StatementHandler {
 
     public StatementHandler(EmConfiguration configuration) {
         this.configuration = configuration;
-        resultSetHandler = new ResultSetHandler();
+        resultSetHandler = new ResultSetHandler(configuration);
     }
 
     public <E> E query(EmMapperRegistory.MapperData mapperData, Object parameter) throws Exception {
