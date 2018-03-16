@@ -2,9 +2,9 @@ package com.subin.framework.mybatis.em;
 
 import com.subin.framework.mybatis.beans.Test;
 import com.subin.framework.mybatis.em.config.EmConfiguration;
-import com.subin.framework.mybatis.em.config.mappers.TestMapper;
 import com.subin.framework.mybatis.em.executor.ExecutorFactory;
 import com.subin.framework.mybatis.em.session.EmSqlSession;
+import com.subin.framework.mybatis.my.TestMapper;
 
 import java.io.IOException;
 
@@ -22,12 +22,11 @@ public class BootStrap {
 
     private static void start() throws IOException {
         EmConfiguration configuration = new EmConfiguration();
-        configuration.setScanPath("com.gupaoedu.mybatis.gp.config.mappers");
+        configuration.setScanPath("com.subin.framework.mybatis.em.config.mappers");
         configuration.build();
         EmSqlSession sqlSession = new EmSqlSession(configuration, ExecutorFactory.DEFAULT(configuration));
         TestMapper testMapper = sqlSession.getMapper(TestMapper.class);
         Test test = testMapper.selectByPrimaryKey(1);
         System.out.println(test);
     }
-
 }

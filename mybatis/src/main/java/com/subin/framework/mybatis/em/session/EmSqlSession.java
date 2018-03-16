@@ -28,7 +28,7 @@ public class EmSqlSession {
 
     public <T> T getMapper(Class<T> clazz) {
         return (T) Proxy.newProxyInstance(clazz.getClassLoader(),
-                new Class[]{clazz},new EmMapperProxy<>(this,clazz));
+                new Class[]{clazz},new EmMapperProxy(this,clazz));
     }
 
     public <T> T selectOne(EmMapperRegistory.MapperData mapperData, Object parameter) throws Exception {
