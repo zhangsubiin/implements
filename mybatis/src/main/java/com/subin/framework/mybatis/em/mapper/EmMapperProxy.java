@@ -16,7 +16,7 @@ public class EmMapperProxy<T> implements InvocationHandler {
     private final EmSqlSession sqlSession;
     private final Class<T> mappperInterface;
 
-    public EmMapperProxy(EmSqlSession sqlSession, Class<T> mappperInterface) {
+    public  EmMapperProxy(EmSqlSession sqlSession, Class<T> mappperInterface) {
         this.sqlSession = sqlSession;
         this.mappperInterface = mappperInterface;
     }

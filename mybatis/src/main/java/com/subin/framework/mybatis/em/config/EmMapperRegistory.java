@@ -16,7 +16,7 @@ public class EmMapperRegistory {
     //使用 1. 在这里配置
     //2. Java Bean的属性名字要和数据库表的名字一致
     public void MapperRegistory() {
-        methodSqlMapping.put("com.subin.framework.mybatis.em.config.mappers.TestMapper.selectByPrimaryKey",
+        methodSqlMapping.put("com.subin.framework.mybatis.my.TestMapper.selectByPrimaryKey",
                 new MapperData("select * from test where id = %d",Test.class));
     }
 
